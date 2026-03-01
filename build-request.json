@@ -1,0 +1,96 @@
+{
+  "kind": "build_request",
+  "title": "Populate music library with songs and make podcasts accessible",
+  "projectName": "Lunita",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-20",
+      "text": "Populate the music library with a collection of songs including track metadata (title, artist, album, duration) and audio file references",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Saare song yaha put karo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend contains multiple Track entries with complete metadata",
+        "Music library endpoint returns populated track list",
+        "Tracks are playable through the existing music player interface"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Add podcast content to the backend including podcast metadata (title, description, host) and episode information (episode titles, descriptions, audio references)",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "podcast bhi"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend contains multiple Podcast entries with episodes",
+        "Podcasts endpoint returns populated podcast list with episodes",
+        "Episodes are playable through the existing podcast player interface"
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Ensure the music library page displays all added songs in the TrackList component with functional play controls",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Saare song yaha put karo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Music page shows all tracks from the populated library",
+        "Play buttons work for each track",
+        "Track metadata displays correctly (title, artist, album)"
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Ensure the podcasts page displays all added podcasts in a grid layout with expandable episode lists that are playable",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "podcast bhi ese logo tk pahucao"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Podcasts page shows all podcasts from the populated backend",
+        "Episodes expand and display correctly when clicking on a podcast",
+        "Episode play buttons integrate with the audio player",
+        "Podcasts are easily accessible and discoverable in the UI"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use the existing Track and Podcast data structures defined in backend/main.mo",
+    "Do not modify the audio player context or music player component",
+    "Maintain the existing single-actor architecture"
+  ],
+  "nonGoals": [
+    "Integration with external music streaming APIs",
+    "Audio file hosting or upload functionality",
+    "Music licensing or copyright management",
+    "Real-time audio streaming protocols"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

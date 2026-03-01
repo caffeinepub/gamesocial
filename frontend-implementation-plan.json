@@ -1,0 +1,65 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Populate music library with songs and make podcasts accessible",
+  "requirements": [
+    {
+      "id": "REQ-22",
+      "summary": "Ensure the music library page displays all added songs in the TrackList component with functional play controls",
+      "acceptanceCriteria": [
+        "Music page shows all tracks from the populated library",
+        "Play buttons work for each track",
+        "Track metadata displays correctly (title, artist, album)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Music.tsx",
+          "operation": "modify",
+          "description": "Verify that the music library tab correctly fetches and displays all tracks from getMusicLibrary backend method using the existing useGetMusicLibrary hook. Ensure loading states, empty states, and error handling are properly implemented. The TrackList component should receive the full track array and render each track with complete metadata."
+        },
+        {
+          "path": "frontend/src/components/TrackList.tsx",
+          "operation": "modify",
+          "description": "Ensure each track displays complete metadata including title, artist, and album information. Verify that play/pause controls integrate correctly with AudioPlayerContext for each track. Confirm that clicking play on any track triggers playback through the existing audio player. Add visual feedback for the currently playing track if not already present."
+        },
+        {
+          "path": "frontend/src/hooks/useQueries.ts",
+          "operation": "modify",
+          "description": "Verify that useGetMusicLibrary hook correctly calls the getMusicLibrary backend method and returns the full track array. Ensure proper error handling and loading states are exposed. Confirm the query key is set appropriately for cache invalidation when new tracks are added to the backend."
+        }
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "summary": "Ensure the podcasts page displays all added podcasts in a grid layout with expandable episode lists that are playable",
+      "acceptanceCriteria": [
+        "Podcasts page shows all podcasts from the populated backend",
+        "Episodes expand and display correctly when clicking on a podcast",
+        "Episode play buttons integrate with the audio player",
+        "Podcasts are easily accessible and discoverable in the UI"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Podcasts.tsx",
+          "operation": "modify",
+          "description": "Verify that the podcasts page correctly fetches and displays all podcasts from getPodcasts backend method using the existing useGetPodcasts hook. Ensure the grid layout properly renders PodcastCard components for each podcast with appropriate spacing and responsive behavior. Confirm loading states, empty states, and error handling are implemented."
+        },
+        {
+          "path": "frontend/src/components/PodcastCard.tsx",
+          "operation": "modify",
+          "description": "Ensure PodcastCard displays complete podcast metadata including title, host, and description. Verify that the expandable episode list functionality works correctly when clicking on a podcast card. Confirm that the EpisodeList component is properly integrated and receives the episodes array from the podcast data. Add visual indicators for expanded/collapsed states if not already present."
+        },
+        {
+          "path": "frontend/src/components/EpisodeList.tsx",
+          "operation": "modify",
+          "description": "Verify that each episode in the list displays complete metadata including title, description, and duration. Ensure play buttons for each episode correctly integrate with AudioPlayerContext to play the episode audio. Confirm that clicking play on an episode triggers playback through the existing audio player with proper episode information. Add visual feedback for the currently playing episode if not already present."
+        },
+        {
+          "path": "frontend/src/hooks/useQueries.ts",
+          "operation": "modify",
+          "description": "Verify that useGetPodcasts hook correctly calls the getPodcasts backend method and returns the full podcasts array with nested episodes. Ensure proper error handling and loading states are exposed. Confirm the query key is set appropriately for cache invalidation when new podcasts are added to the backend."
+        }
+      ]
+    }
+  ]
+}

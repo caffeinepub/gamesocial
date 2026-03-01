@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "A social media app similar to Instagram with music streaming, podcasting features, posts/reels, chat, themes, and authentication. Games are excluded from initial build.",
+  "architectural_notes": [
+    "Social media platform similar to Instagram",
+    "Music streaming and podcast functionality required",
+    "Multi-authentication support (email, phone, Google)",
+    "Theme customization per user for chat interface"
+  ],
+  "known_issues": [
+    "Play Store deployment not supported - app will deploy to Internet Computer",
+    "Music licensing requirements not addressed for streaming service",
+    "Real-time video chat during gameplay excluded from initial scope"
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-social-feed-where-users-can-create-view-and-interact-with-posts-similar-to-instagram-including-image-posts-with-captions-like-functionality-and-comment-sections",
+      "title": "Create a social feed where users can create, view, and interact with posts similar to Instagram, including image posts with captions, like functionality, and comment sections",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-reels-feature-for-short-form-video-content-with-vertical-scrolling-similar-to-instagram-reels",
+      "title": "Implement a reels feature for short-form video content with vertical scrolling, similar to Instagram Reels",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-direct-messaging-system-enabling-one-on-one-and-group-chat-with-text-messages",
+      "title": "Build a direct messaging system enabling one-on-one and group chat with text messages",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-user-profiles-with-customizable-themes-profile-pictures-bio-and-display-of-user-posts-and-activity",
+      "title": "Create user profiles with customizable themes, profile pictures, bio, and display of user posts and activity",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-theme-customization-allowing-users-to-switch-between-dark-and-light-themes-and-customize-their-chat-interface-themes-individually",
+      "title": "Implement theme customization allowing users to switch between dark and light themes, and customize their chat interface themes individually",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-music-streaming-system-similar-to-spotify-with-playback-controls-playlist-creation-and-a-music-library-for-browsing-and-playing-audio-tracks",
+      "title": "Build a music streaming system similar to Spotify with playback controls, playlist creation, and a music library for browsing and playing audio tracks",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-podcast-section-where-users-can-discover-listen-to-and-manage-podcast-episodes-with-episode-lists-and-playback-functionality",
+      "title": "Create a podcast section where users can discover, listen to, and manage podcast episodes with episode lists and playback functionality",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-authentication-system-supporting-email-phone-number-and-google-login-with-username-creation-and-internet-identity-integration",
+      "title": "Implement authentication system supporting email, phone number, and Google login with username creation and Internet Identity integration",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-orange-verification-badge-system-that-appears-next-to-usernames-for-verified-accounts-replacing-the-traditional-blue-checkmark",
+      "title": "Add an orange verification badge system that appears next to usernames for verified accounts, replacing the traditional blue checkmark",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-vibrant-engaging-frontend-with-a-warm-energetic-color-palette-oranges-corals-warm-yellows-for-the-social-and-music-sections-creating-an-inviting-atmosphere-that-encourages-user-engagement-and-makes-the-app-feel-lively-and-approachable",
+      "title": "Design a vibrant, engaging frontend with a warm, energetic color palette (oranges, corals, warm yellows) for the social and music sections, creating an inviting atmosphere that encourages user engagement and makes the app feel lively and approachable",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-application-name-from-soundwave-social-to-lunita-in-the-html-title-tag-in-frontend-index-html",
+      "title": "Update the application name from 'SoundWave Social' to 'Lunita' in the HTML title tag in frontend/index.html",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-any-visible-application-branding-text-in-the-layout-component-header-to-display-lunita-instead-of-the-current-application-name",
+      "title": "Update any visible application branding text in the Layout component header to display 'Lunita' instead of the current application name",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-landing-page-hero-section-in-frontend-src-pages-home-tsx-to-reflect-lunita-as-the-application-name-in-the-main-heading-and-introductory-text",
+      "title": "Update the landing page hero section in frontend/src/pages/Home.tsx to reflect 'Lunita' as the application name in the main heading and introductory text",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-bottom-navigation-bar-to-the-frontend-layout-that-displays-navigation-options-for-music-chat-messages-reels-and-podcasts-sections-ensuring-it-is-visible-on-mobile-and-desktop-viewports",
+      "title": "Add a bottom navigation bar to the frontend layout that displays navigation options for Music, Chat (Messages), Reels, and Podcasts sections, ensuring it is visible on mobile and desktop viewports",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-and-generate-a-new-custom-logo-for-the-lunita-application-that-reflects-the-warm-vibrant-brand-identity-with-oranges-and-corals",
+      "title": "Design and generate a new custom logo for the Lunita application that reflects the warm, vibrant brand identity with oranges and corals",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-application-logo-branding-in-the-layout-component-header-and-home-page-hero-section-with-the-newly-designed-lunita-logo",
+      "title": "Replace the current application logo/branding in the Layout component header and Home page hero section with the newly designed Lunita logo",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-application-s-color-scheme-across-the-entire-frontend-by-replacing-the-current-warm-orange-and-coral-palette-with-a-new-distinctive-color-palette-that-makes-the-brand-more-unique-and-visually-distinct",
+      "title": "Update the application's color scheme across the entire frontend by replacing the current warm orange and coral palette with a new distinctive color palette that makes the brand more unique and visually distinct",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-and-generate-a-completely-new-unique-logo-for-the-lunita-application-that-is-visually-distinctive-and-does-not-resemble-the-current-logo-design",
+      "title": "Design and generate a completely new unique logo for the Lunita application that is visually distinctive and does not resemble the current logo design",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-instances-of-the-current-lunita-logo-throughout-the-application-with-the-newly-designed-unique-logo-including-the-layout-component-header-and-home-page-hero-section",
+      "title": "Replace all instances of the current Lunita logo throughout the application with the newly designed unique logo, including the Layout component header and Home page hero section",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-music-library-page-displays-all-added-songs-in-the-tracklist-component-with-functional-play-controls",
+      "title": "Ensure the music library page displays all added songs in the TrackList component with functional play controls",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-podcasts-page-displays-all-added-podcasts-in-a-grid-layout-with-expandable-episode-lists-that-are-playable",
+      "title": "Ensure the podcasts page displays all added podcasts in a grid layout with expandable episode lists that are playable",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Instagram-like social features (posts, reels, chat, profiles)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Music streaming system similar to Spotify",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Podcast hosting and playback features",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Dark/light theme with user customization for chat",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Authentication via email/number/Google login with username creation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Orange verification badge (instead of blue tick)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add navigation options for Music, Chat, Reels, and Podcasts at the bottom",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Change/redesign the app logo",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Populate the music library with a collection of songs including track metadata (title, artist, album, duration) and audio file references",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add podcast content to the backend including podcast metadata (title, description, host) and episode information (episode titles, descriptions, audio references)",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "SoundWave Social",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

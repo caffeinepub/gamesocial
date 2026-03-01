@@ -1,0 +1,50 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-ensure-the-music-library-page-displays-all-added-songs-in-the-tracklist-component-with-functional-play-controls",
+      "featureTitle": "Ensure the music library page displays all added songs in the TrackList component with functional play controls",
+      "files": [
+        "frontend/src/components/TrackList.tsx",
+        "frontend/src/hooks/useQueries.ts",
+        "frontend/src/pages/Music.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-podcasts-page-displays-all-added-podcasts-in-a-grid-layout-with-expandable-episode-lists-that-are-playable",
+      "featureTitle": "Ensure the podcasts page displays all added podcasts in a grid layout with expandable episode lists that are playable",
+      "files": [
+        "frontend/src/components/EpisodeList.tsx",
+        "frontend/src/components/PodcastCard.tsx",
+        "frontend/src/hooks/useQueries.ts",
+        "frontend/src/pages/Podcasts.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
